@@ -266,7 +266,7 @@ body{
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-  
+  }
     /* Titulos */
     h1{
     color: yellow;
@@ -384,7 +384,7 @@ body{
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-  
+  }
     /* Titulos */
     h1{
     color: yellow;
@@ -424,7 +424,7 @@ body{
     * {
       box-sizing: border-box;
     }
-
+    }
     
     /* Informacion del Navegador */
   
@@ -433,7 +433,7 @@ body{
       width: 50px;
     }
   
-    /* * ? Laptop L */ */
+    /* * ? Laptop L */
     @media (min-width: 1440px){
       body{
         background-color: black;
@@ -471,7 +471,7 @@ body{
         font-size: 20px;
         text-align: left;
       }
-      
+      }
       /* Informacion de Galeria */
       div.gallery {
         border: 1px solid #ccc;
@@ -485,7 +485,7 @@ body{
         width: 100%;
         height: 250px;
         object-fit: fill;
-      
+      }
       
         /* Titulos */
         h1{
@@ -531,7 +531,7 @@ body{
         
         /* Informacion del Navegador */
       
-        .logo{
+        .logo {
           height: 70px;
           width: 50px;
         }
