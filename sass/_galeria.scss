@@ -1,0 +1,24 @@
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: $blanco;
+    object-fit: fill;
+}
+
+  * {
+    box-sizing: border-box;
+}

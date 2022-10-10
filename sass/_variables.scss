@@ -1,0 +1,12 @@
+$color_primario: rgb(0, 0, 0);
+$blanco: white ;
+
+@mixin size ($width,$height) {   
+        $height: $height;
+        $width: $width;
+}
+
+.my_mixin{
+    @include size(100%,600px )
+}
+

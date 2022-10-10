@@ -1,0 +1,472 @@
+@import "variables";
+@import "footer" ;
+@import "titulos" ;
+@import "consejos";
+@import "galeria" ;
+@import "generales";
+@import "index";
+@import "inicio";
+@import "logo";
+@import "sobrenosotros";
+
+
+/* ? Caracteristicas generales */
+
+
+  /* ? MD */
+      
+
+      
+      
+      /* informacion del index */
+
+      
+      /* Informacion de Consejos */
+
+    
+    /* Informacion de Sobre Nosotros */
+
+  
+      /* Titulos */
+      
+
+      
+      /* Galeria */
+      
+
+  
+      
+      /* Informacion del Navegador */
+    
+
+
+
+  
+  /* ? MD */
+  @media (min-width: 768px) {
+    body{
+      background-color: black;
+      
+      }
+      
+      .inicio .background{
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: auto;
+      }
+      
+      
+      /* informacion del index */
+      .informacion{
+      color: $blanco;
+      font-size: 30px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: top;
+      }
+      
+      /* Informacion de Consejos */
+    .consejos{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    
+    /* Informacion de Sobre Nosotros */
+    .sobre-nosotros{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+    /* Informacion de Galeria */
+    
+    
+    
+      /* Titulos */
+      h1{
+      color: rgb(90, 31, 185);
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      }
+      
+      h2{
+        color: yellow;
+        padding-bottom: 50px;
+        padding-top: 20px;
+      }
+      
+      /* Galeria */
+      
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        @include size(100%,600px );
+        object-fit: fill;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        color: $blanco;
+        object-fit: fill;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      
+      /* Informacion del Navegador */
+    
+      .logo{
+        height: 70px;
+        width: 50px;
+      }
+  }
+  /* ? LG */
+  @media (min-width: 1024px) {
+    body{
+      background-color: black;
+      
+      }
+      
+      .inicio .background{
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: auto;
+      }
+      
+      
+      /* informacion del index */
+      .informacion{
+      color: $blanco;
+      font-size: 30px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: top;
+      }
+      
+      /* Informacion de Consejos */
+    .consejos{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    
+    /* Informacion de Sobre Nosotros */
+    .sobre-nosotros{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+    /* Informacion de Galeria */
+    
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: 500px;
+  }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+      /* Titulos */
+      h1{
+      color: yellow;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      }
+      
+      h2{
+        color: yellow;
+        padding-bottom: 50px;
+        padding-top: 20px;
+      }
+      
+      /* Galeria */
+      
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        color: $blanco;
+        object-fit: fill;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      
+      /* Informacion del Navegador */
+    
+      .logo{
+        height: 70px;
+        width: 50px;
+      }
+    }
+  
+  /* ? XL */
+  @media (min-width: 1200px) {
+    body{
+      background-color: black;
+      
+      }
+      
+      .inicio .background{
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: auto;
+      }
+      
+      
+      /* informacion del index */
+      .informacion{
+      color: $blanco;
+      font-size: 30px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: top;
+      }
+      
+      /* Informacion de Consejos */
+    .consejos{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    
+    /* Informacion de Sobre Nosotros */
+    .sobre-nosotros{
+      color: $blanco;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+    /* Informacion de Galeria */
+    
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: 250px;
+  }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+      /* Titulos */
+      h1{
+      color: yellow;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      }
+      
+      h2{
+        color: yellow;
+        padding-bottom: 50px;
+        padding-top: 20px;
+      }
+      
+      /* Galeria */
+      
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        color: $blanco;
+        object-fit: fill;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      
+      /* Informacion del Navegador */
+    
+      .logo{
+        height: 70px;
+        width: 50px;
+      }
+    }
+      /* * ? Laptop L */
+      @media (min-width: 1440px){
+        body{
+          background-color: black;
+          
+          }
+          
+          .inicio .background{
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: auto;
+          }
+          
+          
+          /* informacion del index */
+          .informacion{
+          color: $blanco;
+          font-size: 30px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-position: top;
+          }
+          
+          /* Informacion de Consejos */
+        .consejos{
+          color: $blanco;
+          font-size: 20px;
+          text-align: left;
+          background-repeat: no-repeat;
+          background-position: top;
+        }
+        
+        /* Informacion de Sobre Nosotros */
+        .sobre-nosotros{
+          color: $blanco;
+          font-size: 20px;
+          text-align: left;
+        }
+        
+        /* Informacion de Galeria */
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: 250px;
+          object-fit: fill;
+        }
+        
+          /* Titulos */
+          h1{
+          color: yellow;
+          padding-bottom: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+          }
+          
+          h2{
+            color: yellow;
+            padding-bottom: 50px;
+            padding-top: 20px;
+          }
+          
+          /* Galeria */
+          
+          div.gallery {
+            border: 1px solid #ccc;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: 600px;
+            object-fit: fill;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+            color: $blanco;
+            object-fit: fill;
+          }
+      
+          * {
+            box-sizing: border-box;
+          }
+      
+          
+          /* Informacion del Navegador */
+        
+          .logo {
+            height: 70px;
+            width: 50px;
+          }
+          }
