@@ -123,4 +123,16 @@ body {
   color: white;
   font-size: 20px;
   text-align: left;
+}
+
+.form-group {
+  text-align: center;
+}
+
+i {
+  color: white;
+}
+
+.form-control {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
