@@ -3,3 +3,36 @@
     width: 100%;
     background-size: auto;
 }
+
+.hero{
+    background-image: url(../img/indexbackground.jpg);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+.quienessomosindex {
+    max-width: 1240px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-areas: "titulo titulo" 
+                        "parrafo foto"
+                        "link foto";
+    gap: 50px;
+    .subtitulo {
+    grid-area: titulo;
+    }
+    .parrafosub {
+        grid-area: parrafo;
+        text-align: start;
+    }
+    .lsobrenosotros{
+        grid-area: link;
+        color: white;
+    }
+    .inicio2{
+        grid-area: foto;
+    }
+}
+

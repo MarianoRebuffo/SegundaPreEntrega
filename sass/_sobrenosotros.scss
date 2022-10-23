@@ -1,5 +1,38 @@
-.sobre-nosotros {
+
+.mandingo{
     color: $blanco;
     font-size: 20px;
     text-align: left;
+    max-width: 1240px;
+    margin-inline: auto;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-areas: "parrafo1 img2"
+                            "img1 parrafo2"
+                            "parrafo3 img3";
+                            
+.parrafo1 {
+    grid-area: parrafo1;
+}
+.parrafo2 {
+    grid-area: parrafo2;
+}
+.parrafo3 {
+    grid-area: parrafo3;
+}
+.img1{
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+}
+
+.titulosobrenosotros {
+    background-image: url(../img/background.jpg);
+    background-position: center;
 }

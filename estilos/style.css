@@ -1,5 +1,5 @@
 .footer {
-  background-color: #212529;
+  background-color: #3f3f3f;
   padding-left: 0%;
   padding-right: 0%;
   width: 100%;
@@ -10,21 +10,27 @@
 }
 
 h1 {
-  color: yellow;
+  color: white;
   padding-bottom: 50px;
   margin-bottom: 50px;
   text-align: center;
 }
 @media (min-width: 768px) {
   h1 {
-    color: rgb(90, 31, 185);
+    color: white;
   }
 }
 
 h2 {
-  color: yellow;
+  color: #DDBB1B;
   padding-bottom: 50px;
   padding-top: 20px;
+}
+
+.indextitulo {
+  padding-top: 640px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .consejos {
@@ -40,44 +46,50 @@ h2 {
   }
 }
 
-div.gallery {
-  border: 1px solid #ccc;
+.galeria {
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 4 1fr;
+  grid-template-areas: "titulo titulo titulo titulo" "foto06 foto06 foto12 foto10" "foto11 foto02 foto02 foto10" "foto07 foto01 foto03 foto04" "foto05 foto08 foto09 foto09";
 }
-
-div.gallery:hover {
-  border: 1px solid #777;
+.galeria .foto01 {
+  grid-area: foto01;
 }
-
-div.gallery img {
-  width: 100%;
-  height: 300px;
+.galeria .foto02 {
+  grid-area: foto02;
 }
-@media (min-width: 1024px) {
-  div.gallery img {
-    height: 500px;
-  }
+.galeria .foto03 {
+  grid-area: foto03;
 }
-@media (min-width: 1200px) {
-  div.gallery img {
-    height: 550px;
-  }
+.galeria .foto04 {
+  grid-area: foto04;
 }
-@media (min-width: 1440px) {
-  div.gallery img {
-    font-size: 10px;
-  }
+.galeria .foto05 {
+  grid-area: foto05;
 }
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  color: white;
-  -o-object-fit: fill;
-     object-fit: fill;
+.galeria .foto06 {
+  grid-area: foto06;
 }
-
-* {
-  box-sizing: border-box;
+.galeria .foto7 {
+  grid-area: foto07;
+}
+.galeria .foto08 {
+  grid-area: foto08;
+}
+.galeria .foto09 {
+  grid-area: foto09;
+}
+.galeria .foto10 {
+  grid-area: foto10;
+}
+.galeria .foto11 {
+  grid-area: foto11;
+}
+.galeria .foto12 {
+  grid-area: foto12;
+}
+.galeria h1 {
+  grid-area: titulo;
 }
 
 * {
@@ -100,6 +112,10 @@ body {
   width: 100vw;
 }
 
+img {
+  width: 100%;
+}
+
 .informacion {
   color: white;
   font-size: 30px;
@@ -114,15 +130,78 @@ body {
   background-size: auto;
 }
 
+.hero {
+  background-image: url(../img/indexbackground.jpg);
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+}
+
+.quienessomosindex {
+  max-width: 1240px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-areas: "titulo titulo" "parrafo foto" "link foto";
+  gap: 50px;
+}
+.quienessomosindex .subtitulo {
+  grid-area: titulo;
+}
+.quienessomosindex .parrafosub {
+  grid-area: parrafo;
+  text-align: start;
+}
+.quienessomosindex .lsobrenosotros {
+  grid-area: link;
+  color: white;
+}
+.quienessomosindex .inicio2 {
+  grid-area: foto;
+}
+
 .logo {
   height: 70px;
   width: 50px;
 }
 
-.sobre-nosotros {
+.mandingo {
   color: white;
   font-size: 20px;
   text-align: left;
+  max-width: 1240px;
+  margin-inline: auto;
+  gap: 70px;
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-areas: "parrafo1 img2" "img1 parrafo2" "parrafo3 img3";
+}
+.mandingo .parrafo1 {
+  grid-area: parrafo1;
+}
+.mandingo .parrafo2 {
+  grid-area: parrafo2;
+}
+.mandingo .parrafo3 {
+  grid-area: parrafo3;
+}
+.mandingo .img1 {
+  grid-area: img1;
+}
+.mandingo .img2 {
+  grid-area: img2;
+}
+.mandingo .img3 {
+  grid-area: img3;
+}
+
+.titulosobrenosotros {
+  background-image: url(../img/background.jpg);
+  background-position: center;
+}
+
+.form-horizontal h1 {
+  color: #DDBB1B;
 }
 
 .form-group {
@@ -130,9 +209,32 @@ body {
 }
 
 i {
-  color: white;
+  color: #ddbb1b;
 }
 
 .form-control {
   text-align: center;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ddbb1b;
+  --bs-btn-border-color: #ddbb1b;
+  --bs-btn-hover-color: $color_secundario;
+  --bs-btn-hover-bg: $blanco;
+  --bs-btn-hover-border-color: #ddbb1b;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ddbb1b;
+  --bs-btn-active-border-color: #ddbb1b;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #ddbb1b;
+  --bs-btn-disabled-border-color: ##DDBB1B;
+  margin-top: 20px;
+}
+
+.form-control {
+  background-color: #3f3f3f;
+  border-radius: 40px;
 }/*# sourceMappingURL=style.css.map */

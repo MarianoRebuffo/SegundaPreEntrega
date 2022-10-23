@@ -1,30 +1,51 @@
-div.gallery {
-    border: 1px solid #ccc;
-}
+.galeria{
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns:4 1fr;
+    grid-template-areas: "titulo titulo titulo titulo"
+                            "foto06 foto06 foto12 foto10"
+                            "foto11 foto02 foto02 foto10"
+                            "foto07 foto01 foto03 foto04"
+                            "foto05 foto08 foto09 foto09";
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
+.foto01{
+    grid-area:foto01 ;
+}    
+.foto02{
+    grid-area:foto02 ;
+}  
+.foto03{
+    grid-area:foto03 ;
+}  
+.foto04{
+    grid-area:foto04 ;
+}  
+.foto05{
+    grid-area:foto05 ;
+}  
+.foto06{
+    grid-area:foto06 ;
+}  
+.foto7{
+    grid-area:foto07 ;
+}  
+.foto08{
+    grid-area:foto08 ;
+}  
+.foto09{
+    grid-area:foto09 ;
+}  
+.foto10{
+    grid-area:foto10 ;
+}  
+.foto11{
+    grid-area:foto11 ;
+}  
+.foto12{
+    grid-area:foto12 ;
 
-div.gallery img {
-    width: 100%;
-    height: 300px;
-    @media (min-width: 1024px) {
-        height: 500px; }
-        
-        @media (min-width: 1200px) {
-            height: 550px; }
-        @media (min-width: 1440px){
-            font-size: 10px;}
 }
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    color: $blanco;
-    object-fit: fill;
+h1{
+    grid-area: titulo;
 }
-
-  * {
-    box-sizing: border-box;
 }

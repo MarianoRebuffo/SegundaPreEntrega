@@ -1,15 +1,22 @@
 h1{
-    color: yellow;
+    color: $blanco;
     padding-bottom: 50px;
     margin-bottom: 50px;
     text-align: center;
     @media (min-width: 768px) {
-        color: rgb(90, 31, 185);
+        color: $blanco
         }
 }
 
 h2{
-    color: yellow;
+    color: $color_secundario;
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
+.indextitulo {
+    padding-top: 640px;
+    color: white;
+    text-transform: uppercase;
+}
+
