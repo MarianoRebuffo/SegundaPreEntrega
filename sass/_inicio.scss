@@ -20,10 +20,18 @@
                         "parrafo foto"
                         "link foto";
     gap: 50px;
+    @media only screen and (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+    }
     .subtitulo {
     grid-area: titulo;
     }
     .parrafosub {
+        @media only screen and (max-width: 480px){
+            width: 90vw;
+            margin-inline: auto;
+        }
         grid-area: parrafo;
         text-align: start;
     }

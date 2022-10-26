@@ -12,13 +12,41 @@
                             "img1 parrafo2"
                             "parrafo3 img3";
                             
+@media only screen and (max-width: 480px){
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100vw;
+}
+@media only screen and (max-width: 768px){
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 95vw;
+
+}
+@media only screen and (max-width: 1024px){
+    width: 95vw;
+    margin-inline: auto;
+}
+                            
 .parrafo1 {
+    @media only screen and (max-width: 480px){
+        font-size: 12px;
+    }
     grid-area: parrafo1;
 }
 .parrafo2 {
+    @media only screen and (max-width: 480px){
+        font-size: 12px;
+    }
     grid-area: parrafo2;
 }
 .parrafo3 {
+    @media only screen and (max-width: 480px){
+        font-size: 12px;
+    }
     grid-area: parrafo3;
 }
 .img1{
@@ -36,3 +64,6 @@
     background-image: url(../img/background.jpg);
     background-position: center;
 }
+
+
+

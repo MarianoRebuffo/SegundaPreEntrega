@@ -1,12 +1,14 @@
 .galeria{
     max-width: 1240px;
     display: grid;
+    gap: 20px;
+    margin-inline: auto;
     grid-template-columns:4 1fr;
-    grid-template-areas: "titulo titulo titulo titulo"
-                            "foto06 foto06 foto12 foto10"
-                            "foto11 foto02 foto02 foto10"
-                            "foto07 foto01 foto03 foto04"
-                            "foto05 foto08 foto09 foto09";
+    grid-template-areas: "titulo titulo titulo"
+                            "foto01 foto02 foto03"
+                            "foto04 foto05 foto06"
+                            "foto07 foto08 foto09"
+                            "foto10 foto11 foto12";
 
 .foto01{
     grid-area:foto01 ;
@@ -26,7 +28,7 @@
 .foto06{
     grid-area:foto06 ;
 }  
-.foto7{
+.foto07{
     grid-area:foto07 ;
 }  
 .foto08{

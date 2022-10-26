@@ -2,6 +2,18 @@
     color: $blanco;
     font-size: 30px;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: top;
+    @media only screen and (max-width: 480px){
+        font-size: 12px;
     }
+    @media only screen and (max-width: 768px){
+        font-size: 15px;
+        margin-inline: auto;
+        width: 95vw;
+    }
+    
+    @media only screen and (max-width: 1024px){
+        width: 95vw;
+        margin-inline: auto;
+    }
+    }
+

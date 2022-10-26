@@ -2,10 +2,7 @@
   background-color: #3f3f3f;
   padding-left: 0%;
   padding-right: 0%;
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  margin-top: 50%;
+  margin-top: 30px;
   color: white;
 }
 
@@ -35,22 +32,29 @@ h2 {
 
 .consejos {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   text-align: left;
   background-repeat: no-repeat;
   background-position: top;
 }
-@media (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .consejos {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .consejos {
+    font-size: 18px;
   }
 }
 
 .galeria {
   max-width: 1240px;
   display: grid;
+  gap: 20px;
+  margin-inline: auto;
   grid-template-columns: 4 1fr;
-  grid-template-areas: "titulo titulo titulo titulo" "foto06 foto06 foto12 foto10" "foto11 foto02 foto02 foto10" "foto07 foto01 foto03 foto04" "foto05 foto08 foto09 foto09";
+  grid-template-areas: "titulo titulo titulo" "foto01 foto02 foto03" "foto04 foto05 foto06" "foto07 foto08 foto09" "foto10 foto11 foto12";
 }
 .galeria .foto01 {
   grid-area: foto01;
@@ -70,7 +74,7 @@ h2 {
 .galeria .foto06 {
   grid-area: foto06;
 }
-.galeria .foto7 {
+.galeria .foto07 {
   grid-area: foto07;
 }
 .galeria .foto08 {
@@ -120,8 +124,24 @@ img {
   color: white;
   font-size: 30px;
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: top;
+}
+@media only screen and (max-width: 480px) {
+  .informacion {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .informacion {
+    font-size: 15px;
+    margin-inline: auto;
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .informacion {
+    width: 95vw;
+    margin-inline: auto;
+  }
 }
 
 .inicio .background {
@@ -145,12 +165,24 @@ img {
   grid-template-areas: "titulo titulo" "parrafo foto" "link foto";
   gap: 50px;
 }
+@media only screen and (max-width: 480px) {
+  .quienessomosindex {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .quienessomosindex .subtitulo {
   grid-area: titulo;
 }
 .quienessomosindex .parrafosub {
   grid-area: parrafo;
   text-align: start;
+}
+@media only screen and (max-width: 480px) {
+  .quienessomosindex .parrafosub {
+    width: 90vw;
+    margin-inline: auto;
+  }
 }
 .quienessomosindex .lsobrenosotros {
   grid-area: link;
@@ -176,14 +208,52 @@ img {
   grid-template-columns: 2 1fr;
   grid-template-areas: "parrafo1 img2" "img1 parrafo2" "parrafo3 img3";
 }
+@media only screen and (max-width: 480px) {
+  .mandingo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mandingo {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mandingo {
+    width: 95vw;
+    margin-inline: auto;
+  }
+}
 .mandingo .parrafo1 {
   grid-area: parrafo1;
+}
+@media only screen and (max-width: 480px) {
+  .mandingo .parrafo1 {
+    font-size: 12px;
+  }
 }
 .mandingo .parrafo2 {
   grid-area: parrafo2;
 }
+@media only screen and (max-width: 480px) {
+  .mandingo .parrafo2 {
+    font-size: 12px;
+  }
+}
 .mandingo .parrafo3 {
   grid-area: parrafo3;
+}
+@media only screen and (max-width: 480px) {
+  .mandingo .parrafo3 {
+    font-size: 12px;
+  }
 }
 .mandingo .img1 {
   grid-area: img1;
