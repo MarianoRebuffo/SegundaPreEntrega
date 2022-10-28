@@ -2,10 +2,9 @@ $color_primario: rgb(0, 0, 0);
 $color_secundario: #DDBB1B;
 $blanco: white ;
 
-
 @mixin size ($width,$height) {   
-        $height: $height;
-        $width: $width;
+    $height: $height;
+    $width: $width;
 }
 
 .my_mixin{

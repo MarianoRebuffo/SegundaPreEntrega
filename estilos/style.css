@@ -106,18 +106,30 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
 .formulario {
   width: 100vw;
 }
 
 img {
   width: 100%;
+}
+
+[data-aos=fade-left] {
+  transform: translate3d(100px, 0, 0);
+}
+@media only screen and (max-width: 1024px) {
+  [data-aos=fade-left] {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+[data-aos=fade-right] {
+  transform: translate3d(-100px, 0, 0);
+}
+@media only screen and (max-width: 1024px) {
+  [data-aos=fade-right] {
+    transform: translate3d(0px, 0, 0);
+  }
 }
 
 .informacion {
@@ -207,14 +219,6 @@ img {
   display: grid;
   grid-template-columns: 2 1fr;
   grid-template-areas: "parrafo1 img2" "img1 parrafo2" "parrafo3 img3";
-}
-@media only screen and (max-width: 480px) {
-  .mandingo {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    width: 100vw;
-  }
 }
 @media only screen and (max-width: 768px) {
   .mandingo {
